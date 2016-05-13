@@ -70,13 +70,13 @@
 	if (![[NSFileManager defaultManager] fileExistsAtPath:directory isDirectory:NULL]) {
 		result = [[NSFileManager defaultManager] createDirectoryAtPath:directory withIntermediateDirectories:TRUE attributes:NULL error:NULL];
 		if (result) {
-			NSLog(@"create directory successfully!");
+			DDLogDebug(@"create directory successfully!");
 		}
 	}
     NSString *filePath = [self getFilePathWithKey:key];
 	result = [NSKeyedArchiver archiveRootObject:object toFile:filePath];
     if (result) {
-        NSLog(@"save successfully!");
+        DDLogDebug(@"save successfully!");
     }
 }
 
