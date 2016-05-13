@@ -1,0 +1,10 @@
+PODS:
+  - ZJUtils (1.0.2)
+
+DEPENDENCIES:
+  - ZJUtils (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  ZJUtils: f34f86511a34a23a08de6f60349b4f0b9f45de76
+
+COCOAPODS: 0.39.0
