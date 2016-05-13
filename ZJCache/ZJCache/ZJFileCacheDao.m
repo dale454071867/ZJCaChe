@@ -6,6 +6,7 @@
 //  Copyright (c) 2013年 iTotemStudio. All rights reserved.
 //
 #import "ZJFileCacheDao.h"
+#import "DDLogger.h"
 @interface ZJFileCacheDao()
 {
     NSMutableArray      *_memoryCacheKeys;      // keys for objects only cached in memory
