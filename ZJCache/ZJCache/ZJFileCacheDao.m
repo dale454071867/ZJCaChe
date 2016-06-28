@@ -6,7 +6,6 @@
 //  Copyright (c) 2013年 iTotemStudio. All rights reserved.
 //
 #import "ZJFileCacheDao.h"
-#import "DDLogger.h"
 @interface ZJFileCacheDao()
 {
     NSMutableArray      *_memoryCacheKeys;      // keys for objects only cached in memory
@@ -71,13 +70,13 @@
 	if (![[NSFileManager defaultManager] fileExistsAtPath:directory isDirectory:NULL]) {
 		result = [[NSFileManager defaultManager] createDirectoryAtPath:directory withIntermediateDirectories:TRUE attributes:NULL error:NULL];
 		if (result) {
-			DDLogDebug(@"create directory successfully!");
+			NSLog(@"create directory successfully!");
 		}
 	}
     NSString *filePath = [self getFilePathWithKey:key];
 	result = [NSKeyedArchiver archiveRootObject:object toFile:filePath];
     if (result) {
-        DDLogDebug(@"save successfully!");
+        NSLog(@"save successfully!");
     }
 }
 

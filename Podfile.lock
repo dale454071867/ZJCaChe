@@ -1,16 +1,10 @@
 PODS:
-  - DDLogger (1.1.1):
-    - ICTextView (~> 2.0.1)
-  - ICTextView (2.0.1)
   - ZJUtils (1.0.2)
 
 DEPENDENCIES:
-  - DDLogger (= 1.1.1)
   - ZJUtils (= 1.0.2)
 
 SPEC CHECKSUMS:
-  DDLogger: 32ca5e6324a4e90adda1e112a398effa1d7d7933
-  ICTextView: 937aca5dd49e39e9cca41ababe8c55bf99c634fc
   ZJUtils: f34f86511a34a23a08de6f60349b4f0b9f45de76
 
 COCOAPODS: 0.39.0
